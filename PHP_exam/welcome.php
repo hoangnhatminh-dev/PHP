@@ -23,7 +23,7 @@ VALUE ('$full_name', '$email', '$username', '$hash');";
 $insert_r = $connection -> query($insert);
 if(!$insert_r) die ("Fatal Error in Insert");
 
-//
+//Save data into Cookies and Display Welcome Message
 if(isset($_COOKIE['full_name'])) $test = $_COOKIE['full_name'];
 echo "<p><b>Welcome: $full_name</b></p>";
 echo "<br>";
